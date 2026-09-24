@@ -1,0 +1,3 @@
+task: rewrite bullets
+ctx: design
+out: 1 line each

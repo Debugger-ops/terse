@@ -1,0 +1,12 @@
+// FLAGS:
+#define ROLES frontend, "full-stack, Node", design
+task: tailor resume
+#for r in {ROLES}
++ bullet for {r} roles
+#end
+#for a in x, y
+#for b in 1, 2
+- {a}{b}
+#end
+#end
+out: 1 line each

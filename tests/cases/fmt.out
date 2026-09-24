@@ -1,0 +1,16 @@
+// FLAGS: --format
+#define TOPIC  caching
+
+task: explain {TOPIC}
+#ifdef TOPIC
+  + real examples
+  #template ask(q, depth="short")
+    ask: {q}, {depth}
+  #end
+#endif
+/* kept
+      as is */
+in: ```py
+   x = 1    
+```
+out: max 80 words

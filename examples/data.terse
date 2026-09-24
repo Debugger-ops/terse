@@ -1,0 +1,8 @@
+// Multi-step task: steps run in order and may refer back to earlier steps.
+in: uploaded csv
+1. count rows, cols
+2. missing values per col
+3. bar chart of step 2
+4. suggest fix for each col in step 2
+if: no missing values -> skip step 3
+out: terse

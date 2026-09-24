@@ -1,0 +1,16 @@
+// FLAGS: --emit=xml
+#pragma key lang
+task: review code
+lang: go
+let: SLA = 200ms p99
+ctx: payments, SLA matters
+if: unsure -> ask
++ concurrency bugs
+- style nits
+! no invented APIs
+1. list risks
+2. rank step 1 by impact
+in: ```go
+func f() {}
+```
+out: table, max 5 rows

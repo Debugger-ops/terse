@@ -1,0 +1,9 @@
+task: tailor resume
++ bullet for frontend roles
++ bullet for full-stack, Node roles
++ bullet for design roles
+- x1
+- x2
+- y1
+- y2
+out: 1 line each

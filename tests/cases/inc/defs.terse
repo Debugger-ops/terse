@@ -1,0 +1,6 @@
+#pragma once
+#define LANG python
+#template fn(what)
+task: {LANG} fn, {what}
++ type hints
+#end

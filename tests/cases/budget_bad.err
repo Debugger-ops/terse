@@ -1,0 +1,4 @@
+tests/cases/budget_bad.terse:2:1: error: expected a token count after '#pragma budget', like '#pragma budget 200'
+    2 | #pragma budget lots
+      | ^~~~~~~
+1 error generated.

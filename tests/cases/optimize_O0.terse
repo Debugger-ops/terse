@@ -1,0 +1,7 @@
+// FLAGS: -O0 -w
+out: max one hundred words
+task: Could you please write a short email to the professor
+why: I was sick — really sick
+- emoji 🙏, e.g. greetings w/o substance
+- emoji 🙏, e.g. greetings w/o substance
+err: "please keep this — exactly"

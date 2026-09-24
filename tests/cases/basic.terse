@@ -1,0 +1,6 @@
+// FLAGS:
+task: summarize article
+out: 5 bullets
++ main arguments
+- examples, background
+for: beginner

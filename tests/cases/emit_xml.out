@@ -1,0 +1,26 @@
+<task>review code</task>
+<definitions>
+  <definition name="SLA">200ms p99</definition>
+</definitions>
+<lang>go</lang>
+<context>payments, SLA matters</context>
+<if condition="unsure">ask</if>
+<input>
+```go
+func f() {}
+```
+</input>
+<include>
+  <item>concurrency bugs</item>
+</include>
+<exclude>
+  <item>style nits</item>
+</exclude>
+<rules>
+  <rule>no invented APIs</rule>
+</rules>
+<steps>
+  <step n="1">list risks</step>
+  <step n="2">rank step 1 by impact</step>
+</steps>
+<output_format>table, max 5 rows</output_format>

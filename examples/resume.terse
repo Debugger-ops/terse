@@ -1,0 +1,23 @@
+// Compile for different roles:
+//   tersec -D ROLE=frontend examples/resume.terse
+//   tersec -D ROLE=design   examples/resume.terse
+#include "lib/common.terse"
+
+#ifndef ROLE
+  #error ROLE is not set; compile with -D ROLE=frontend or -D ROLE=design
+#endif
+
+task: rewrite resume bullets
+ctx: {ME}
+#if ROLE == frontend
+  ctx: target frontend engineer roles
+  + React, performance, accessibility numbers
+#elif ROLE == design
+  ctx: target UX/product design roles
+  + user research, design system, outcomes
+#else
+  #warning unknown ROLE '{ROLE}', using generic bullets
+#endif
++ action verb first, numbers if present
+! no invented facts
+out: 1 line each

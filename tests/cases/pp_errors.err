@@ -1,0 +1,31 @@
+tests/cases/pp_errors.terse:5:1: error: too few arguments to template 'two': expected 2, have 1
+    5 | #use two(1)
+      | ^~~~
+tests/cases/pp_errors.terse:2:1: note: 'two' declared here
+    2 | #template two(a, b)
+      | ^~~~~~~~~
+tests/cases/pp_errors.terse:6:1: error: use of undeclared template 'nothere'
+    6 | #use nothere()
+      | ^~~~
+tests/cases/pp_errors.terse:7:1: error: 'missing.terse' file not found
+    7 | #include "missing.terse"
+      | ^~~~~~~~
+tests/cases/pp_errors.terse:8:1: error: invalid preprocessing directive '#bogus'
+    8 | #bogus
+      | ^~~~~~
+tests/cases/pp_errors.terse:9:1: error: use '==' (two '=') in '#if'
+    9 | #if X === 3
+      | ^~~
+tests/cases/pp_errors.terse:11:1: error: #endif without #if
+   11 | #endif
+      | ^~~~~~
+tests/cases/pp_errors.terse:12:6: error: use of undeclared name 'UNDEF' (define it with '#define UNDEF ...', or write '\{' for a literal brace)
+   12 | ctx: {UNDEF}
+      |      ^~~~~~~
+tests/cases/pp_errors.terse:13:1: error: stop here
+   13 | #error stop here
+      | ^~~~~~
+tests/cases/pp_errors.terse:12:1: error: prompt has no 'task:' and no numbered steps; every prompt needs one (like main() in C)
+   12 | ctx: {UNDEF}
+      | ^~~~
+9 errors generated.

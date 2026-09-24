@@ -1,0 +1,7 @@
+// FLAGS:
+#template review(what, depth="top 3 issues", tone=direct)
+task: review {what}
+tone: {tone}
+out: {depth}
+#end
+#use review("PR 42, auth flow", "top 5 issues")

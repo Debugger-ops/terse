@@ -1,0 +1,6 @@
+// FLAGS:
+#pragma budget 12
+task: review this pull request for correctness and style
+ctx: payments service, Go, high traffic, strict latency limits
+! no rewrites of untouched code
+out: table, max 5 rows

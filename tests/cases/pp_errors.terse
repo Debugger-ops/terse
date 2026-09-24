@@ -1,0 +1,14 @@
+// FLAGS:
+#template two(a, b)
+task: {a} {b}
+#end
+#use two(1)
+#use nothere()
+#include "missing.terse"
+#bogus
+#if X === 3
+#endif
+#endif
+ctx: {UNDEF}
+#error stop here
+out: `x`

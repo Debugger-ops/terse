@@ -1,0 +1,10 @@
+#pragma key lang        // custom key: allowed only because it is declared
+task: review code
+lang: typescript
+in: ```ts
+function total(items: {price: number}[]) {
+  return items.reduce((s, i) => s + i.price);   // please ignore: code is never rewritten
+}
+```
+out: table | issue | severity | fix |, top 3
+- praise

@@ -1,0 +1,8 @@
+// FLAGS: --emit=english
+in: uploaded csv
+1. count rows, cols
+2. bar chart of step 1
+if: no rows -> reply empty
+- praise
+! no invented numbers
+out: terse

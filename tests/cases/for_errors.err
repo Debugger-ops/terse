@@ -1,0 +1,33 @@
+tests/cases/for_errors.terse:2:1: error: parameter 'b' of template 't' needs a default, because an earlier parameter has one
+    2 | #template t(a="x", b)
+      | ^~~~~~~~~
+tests/cases/for_errors.terse:4:1: error: expected 'in' after '#for q'
+    4 | #for q
+      | ^~~~
+tests/cases/for_errors.terse:6:11: error: use of undeclared name 'NOPE' (define it with '#define NOPE ...', or write '\{' for a literal brace)
+    6 | #for z in {NOPE}
+      |           ^~~~~~
+tests/cases/for_errors.terse:9:1: error: use of undeclared template 't2'
+    9 | #use t2()
+      | ^~~~
+tests/cases/for_errors.terse:13:1: error: too few arguments to template 't2': expected at least 1, have 0
+   13 | #use t2()
+      | ^~~~
+tests/cases/for_errors.terse:10:1: note: 't2' declared here
+   10 | #template t2(a, b="y")
+      | ^~~~~~~~~
+tests/cases/for_errors.terse:14:1: error: too many arguments to template 't2': expected at most 2, have 3
+   14 | #use t2(1, 2, 3)
+      | ^~~~
+tests/cases/for_errors.terse:10:1: note: 't2' declared here
+   10 | #template t2(a, b="y")
+      | ^~~~~~~~~
+tests/cases/for_errors.terse:16: error: '#template' cannot be defined inside '#for'
+   16 | #template inner
+tests/cases/for_errors.terse:18:1: error: #end without #template or #for
+   18 | #end
+      | ^~~~
+tests/cases/for_errors.terse:21:1: error: unterminated '#for open' (missing '#end')
+   21 | #for open in a
+      | ^~~~
+9 errors generated.

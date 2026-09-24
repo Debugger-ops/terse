@@ -1,0 +1,10 @@
+// FLAGS: --emit=json
+task: rewrite resume bullets
+ctx: fresher, frontend roles
+ctx: "quoted" text
+let: tone = warm
++ action verb first
+! no invented facts
+1. read
+2. rewrite step 1 in tone
+out: 1 line each

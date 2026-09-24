@@ -1,0 +1,8 @@
+// Written like plain English. Compile with -O2 --stats to see the optimizer work.
+task: Could you please write a short email to the professor
+ask: a one week extension on the project
+why: I was sick last week — really sick
+tone: formal, polite
+- emoji 🙏, e.g. greetings w/o substance
+- emoji 🙏, e.g. greetings w/o substance
+out: max one hundred words

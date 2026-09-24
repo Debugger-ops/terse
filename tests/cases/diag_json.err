@@ -1,0 +1,5 @@
+[
+  {"kind": "error", "file": "tests/cases/diag_json.terse", "line": 7, "column": 1, "length": 4, "message": "unknown key 'tsk'; did you mean 'task'?", "option": null, "expansions": [], "notes": []},
+  {"kind": "warning", "file": "tests/cases/diag_json.terse", "line": 5, "column": 11, "length": 3, "message": "'k8s' costs more tokens than 'kubernetes' (R8)", "option": "-Wnumeronym", "fixit": {"replacement": "kubernetes"}, "expansions": [], "notes": []},
+  {"kind": "warning", "file": "tests/cases/diag_json.terse", "line": 3, "column": null, "length": null, "message": "'please' is filler and carries no instruction (R1)", "option": "-Wfiller", "expansions": [{"file": "tests/cases/diag_json.terse", "line": 6, "column": 1, "type": "template", "name": "t"}], "notes": []}
+]

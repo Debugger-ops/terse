@@ -1,0 +1,6 @@
+build/
+tersec
+terse
+*.o
+.DS_Store
+Claude outputs/

@@ -1,0 +1,7 @@
+tests/cases/werror.terse:2:11: error: 'k8s' costs more tokens than 'kubernetes' (R8) [-Werror,-Wnumeronym]
+    2 | task: fix k8s config please
+      |           ^~~
+tests/cases/werror.terse:2:22: error: 'please' is filler and carries no instruction (R1) [-Werror,-Wfiller]
+    2 | task: fix k8s config please
+      |                      ^~~~~~
+2 errors generated.

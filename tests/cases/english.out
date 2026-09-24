@@ -1,0 +1,8 @@
+Input: uploaded csv.
+If no rows, then reply empty.
+Do not include: praise.
+Hard rule, never break it: no invented numbers.
+Do these steps in order:
+1. count rows, cols
+2. bar chart of step 1
+Format the answer as: terse.

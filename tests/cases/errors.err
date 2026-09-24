@@ -1,0 +1,42 @@
+tests/cases/errors.terse:7:1: error: expected 'key:', '+', '-', '!' or a step number like '1.' at start of line
+    7 | let bad
+      | ^~~
+tests/cases/errors.terse:10:1: error: step 3 out of sequence; expected step 2
+   10 | 3. chart of step 5
+      | ^~
+tests/cases/errors.terse:2:1: error: unknown key 'tsk'; did you mean 'task'?
+    2 | tsk: summarize article
+      | ^~~~
+tests/cases/errors.terse:4:1: error: redefinition of 'task:'
+    4 | task: two
+      | ^~~~~
+tests/cases/errors.terse:3:1: note: previous definition is here
+    3 | task: one
+      | ^~~~~
+tests/cases/errors.terse:6:6: error: redefinition of 'stack'
+    6 | let: stack = Vue
+      |      ^~~~~
+tests/cases/errors.terse:5:1: note: previous definition is here
+    5 | let: stack = React
+      | ^~~~
+tests/cases/errors.terse:8:5: error: expected '->' in 'if:' (write it as 'condition -> action')
+    8 | if: no errors
+      |     ^~~~~~~~~
+tests/cases/errors.terse:12:1: error: unknown key 'foo'; did you mean 'for'?
+   12 | foo: bar
+      | ^~~~
+tests/cases/errors.terse:13:1: error: expected a value after '+'
+   13 | +
+      | ^
+tests/cases/errors.terse:10:13: error: reference to step 5, but the prompt has only 3 steps
+   10 | 3. chart of step 5
+      |             ^~~~~~
+tests/cases/errors.terse:11:6: error: reference to step 9, but the prompt has only 3 steps
+   11 | ref: step 9
+      |      ^~~~~~
+tests/cases/errors.terse:4:7: warning: write 'two' as the digit '2' (R10) [-Wnumber-words]
+    4 | task: two
+      |       ^~~
+tests/cases/errors.terse:3: warning: prompt has no 'out:' line; the model will pick its own format and length (R17) [-Wmissing-out]
+    3 | task: one
+2 warnings and 10 errors generated.

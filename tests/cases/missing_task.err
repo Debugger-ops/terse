@@ -1,0 +1,6 @@
+tests/cases/missing_task.terse:2:1: error: prompt has no 'task:' and no numbered steps; every prompt needs one (like main() in C)
+    2 | ctx: nothing to do
+      | ^~~~
+tests/cases/missing_task.terse:2: warning: prompt has no 'out:' line; the model will pick its own format and length (R17) [-Wmissing-out]
+    2 | ctx: nothing to do
+1 warning and 1 error generated.

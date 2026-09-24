@@ -1,0 +1,14 @@
+// FLAGS: -D ROLE=design -D SHORT
+task: rewrite bullets
+#if ROLE == frontend
+ctx: frontend
+#elif ROLE == design
+ctx: design
+#else
+ctx: other
+#endif
+#ifdef SHORT
+out: 1 line each
+#else
+out: 2 lines each
+#endif

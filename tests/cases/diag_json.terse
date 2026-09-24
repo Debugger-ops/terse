@@ -1,0 +1,8 @@
+// FLAGS: --diagnostics-format=json
+#template t(x)
+ctx: please {x}
+#end
+task: fix k8s config
+#use t(now)
+tsk: typo
+out: 1 line

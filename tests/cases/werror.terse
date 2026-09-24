@@ -1,0 +1,3 @@
+// FLAGS: -Werror
+task: fix k8s config please
+out: 1 line

@@ -1,0 +1,21 @@
+// FLAGS:
+#template t(a="x", b)
+#end
+#for q
+#end
+#for z in {NOPE}
+ctx: {z}
+#end
+#use t2()
+#template t2(a, b="y")
+ctx: {a} {b}
+#end
+#use t2()
+#use t2(1, 2, 3)
+#for i in 1
+#template inner
+#end
+#end
+task: t
+out: 1 line
+#for open in a

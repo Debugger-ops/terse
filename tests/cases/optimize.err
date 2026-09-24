@@ -1,0 +1,40 @@
+tests/cases/optimize.terse:2:10: warning: write 'one hundred' as the digit '100' (R10) [-Wnumber-words]
+    2 | out: max one hundred words
+      |          ^~~~~~~~~~~
+tests/cases/optimize.terse:3:7: warning: 'Could you please' is filler and carries no instruction (R1) [-Wfiller]
+    3 | task: Could you please write a short email to the professor
+      |       ^~~~~~~~~~~~~~~~
+tests/cases/optimize.terse:3:30: warning: article 'a' can usually be dropped (R2) [-Warticles]
+    3 | task: Could you please write a short email to the professor
+      |                              ^~
+tests/cases/optimize.terse:3:47: warning: article 'the' can usually be dropped (R2) [-Warticles]
+    3 | task: Could you please write a short email to the professor
+      |                                               ^~~~
+tests/cases/optimize.terse:4:17: warning: '—' costs extra tokens; use ASCII '-' [-Wunicode]
+    4 | why: I was sick — really sick
+      |                 ^~~
+tests/cases/optimize.terse:5:9: warning: emoji cost 2-4 tokens and carry no precise meaning; use a word [-Wunicode]
+    5 | - emoji 🙏, e.g. greetings w/o substance
+      |         ^
+tests/cases/optimize.terse:5:15: warning: 'e.g.' costs more tokens than 'like' [-Wabbrev]
+    5 | - emoji 🙏, e.g. greetings w/o substance
+      |               ^~~~
+tests/cases/optimize.terse:5:30: warning: 'w/o' costs more tokens than 'without' [-Wabbrev]
+    5 | - emoji 🙏, e.g. greetings w/o substance
+      |                              ^~~
+tests/cases/optimize.terse:6:9: warning: emoji cost 2-4 tokens and carry no precise meaning; use a word [-Wunicode]
+    6 | - emoji 🙏, e.g. greetings w/o substance
+      |         ^
+tests/cases/optimize.terse:6:15: warning: 'e.g.' costs more tokens than 'like' [-Wabbrev]
+    6 | - emoji 🙏, e.g. greetings w/o substance
+      |               ^~~~
+tests/cases/optimize.terse:6:30: warning: 'w/o' costs more tokens than 'without' [-Wabbrev]
+    6 | - emoji 🙏, e.g. greetings w/o substance
+      |                              ^~~
+tests/cases/optimize.terse:6:1: warning: duplicate line; it repeats an earlier line (R13) [-Wduplicate]
+    6 | - emoji 🙏, e.g. greetings w/o substance
+      | ^
+tests/cases/optimize.terse:5:1: note: first written here
+    5 | - emoji 🙏, e.g. greetings w/o substance
+      | ^
+12 warnings generated.

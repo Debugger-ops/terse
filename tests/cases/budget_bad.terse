@@ -1,0 +1,4 @@
+// FLAGS:
+#pragma budget lots
+task: t
+out: 1 line

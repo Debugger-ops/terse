@@ -1,0 +1,4 @@
+// The smallest useful Terse program.
+task: python fn, list[int] -> evens
++ type hints, docstring
+out: code, 1 line note

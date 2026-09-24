@@ -1,0 +1,10 @@
+--- tests/cases/fix.terse
++++ tests/cases/fix.terse (fixed)
+@@ -3 +3 @@
+-task: please summarize the k8s incident
++task: summarize kubernetes incident
+@@ -5 +5 @@
+-+ timeline w/ five key events
+++ timeline with 5 key events
+@@ -6,1 +5,0 @@
+-+ timeline w/ five key events

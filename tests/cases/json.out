@@ -1,0 +1,18 @@
+{
+  "task": "rewrite resume bullets",
+  "ctx": "fresher, frontend roles\n\"quoted\" text",
+  "out": "1 line each",
+  "let": {
+    "tone": "warm"
+  },
+  "include": [
+    "action verb first"
+  ],
+  "rules": [
+    "no invented facts"
+  ],
+  "steps": [
+    "read",
+    "rewrite step 1 in tone"
+  ]
+}

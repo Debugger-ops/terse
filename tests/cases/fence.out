@@ -1,0 +1,9 @@
+task: review code
+lang: ts
+in: ```ts
+// please: comments and {braces} inside fences are kept
+const a = {x};  /* also kept */
+```
+ctx: see https://example.com/a
+ctx: literal {brace}
+out: `keep {this} please`, 3 bullets

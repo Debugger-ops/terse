@@ -1,0 +1,13 @@
+tests/cases/budget.terse:2:1: error: prompt is ~42 tokens, over the budget of 12 (by ~30)
+    2 | #pragma budget 12
+      | ^~~~~~~
+tests/cases/budget.terse:4:1: note: this line costs ~14 tokens
+    4 | ctx: payments service, Go, high traffic, strict latency limits
+      | ^~~~
+tests/cases/budget.terse:3:1: note: this line costs ~12 tokens
+    3 | task: review this pull request for correctness and style
+      | ^~~~~
+tests/cases/budget.terse:5:1: note: this line costs ~8 tokens
+    5 | ! no rewrites of untouched code
+      | ^
+1 error generated.

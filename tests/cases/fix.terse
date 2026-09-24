@@ -1,0 +1,8 @@
+// FLAGS: --fix --dry-run -O2 -w
+#define WHO team
+task: please summarize the k8s incident
+ctx: for {WHO}, a two page doc
++ timeline w/ five key events
++ timeline w/ five key events
+err: "please do not touch"
+out: max 100 words

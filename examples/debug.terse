@@ -1,0 +1,5 @@
+#include "lib/common.terse"
+#include "lib/common.terse"   // safe: #pragma once
+
+#use bugfix("login form, submit click -> nothing", "'Cannot read properties of undefined (reading 'email')'")
+#use terse

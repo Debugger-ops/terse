@@ -1,0 +1,20 @@
+task: review code
+lang: go
+ctx: payments, SLA matters
+if: unsure -> ask
+in: |-
+  ```go
+  func f() {}
+  ```
+out: table, max 5 rows
+let:
+  SLA: 200ms p99
+include:
+  - concurrency bugs
+exclude:
+  - style nits
+rules:
+  - no invented APIs
+steps:
+  - list risks
+  - rank step 1 by impact

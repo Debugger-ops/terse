@@ -1,0 +1,4 @@
+task: python fn, list[int] -> evens
++ type hints
+let: fmt = code block
+out: fmt, 1 line note

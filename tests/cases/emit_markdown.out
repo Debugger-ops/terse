@@ -1,0 +1,38 @@
+**Task:** review code
+
+**Definitions:**
+
+- `SLA`: 200ms p99
+
+**Lang:** go
+
+**Context:** payments, SLA matters
+
+**Input:**
+
+```go
+func f() {}
+```
+
+**Conditions:**
+
+- If unsure, then ask
+
+**Include:**
+
+- concurrency bugs
+
+**Exclude:**
+
+- style nits
+
+**Rules (never break):**
+
+- no invented APIs
+
+**Steps:**
+
+1. list risks
+2. rank step 1 by impact
+
+**Output format:** table, max 5 rows

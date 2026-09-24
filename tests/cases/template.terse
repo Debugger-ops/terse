@@ -1,0 +1,6 @@
+// FLAGS:
+#include "inc/defs.terse"
+#include "inc/defs.terse"
+#use fn("list[int] -> evens")
+let: fmt = code block
+out: fmt, 1 line note

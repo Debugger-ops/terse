@@ -1,0 +1,18 @@
+// Shared definitions. Include with:  #include "lib/common.terse"
+#pragma once
+
+#define ME fresher, ECE grad, frontend + full-stack
+#define STACK React, Node, Postgres
+
+// A reusable bug-fix prompt: like a function with 2 parameters.
+#template bugfix(where, error)
+  task: fix bug
+  ctx: {STACK} app, {where}
+  err: {error}
+  out: changed lines only, 2 line why
+#end
+
+// Standard "no padding" constraints.
+#template terse
+  - intro, summary, praise, disclaimers
+#end

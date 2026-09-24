@@ -1,0 +1,16 @@
+// Defaults, loops and a token budget (Terse 0.4).
+//   tersec examples/loops.terse
+//   tersec --emit=xml examples/loops.terse
+#pragma budget 80
+#define ROLES frontend, "full-stack, Node", design
+
+#template review(what, depth="top 3 issues", tone=direct)
+  task: review {what}
+  tone: {tone}
+  out: {depth}
+#end
+
+#use review("PR 42, auth flow")
+#for r in {ROLES}
+  + what a {r} reviewer would flag
+#end
